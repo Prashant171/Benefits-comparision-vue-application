@@ -1,0 +1,39 @@
+
+query 
+getcompetitors
+(
+  $name : String!,
+  $number_of_employees : Int!,
+  $industry : String!
+
+)
+{
+  getcompetitors(
+  name : $name,
+  number_of_employees : $number_of_employees,
+  industry : $industry
+  )
+  {
+    id
+    name 
+    website
+    number_of_employees
+    funding_stage
+    industry
+    health_insurance
+    sum_insured
+    family_covered
+    parents_covered
+    maternity_covered
+    gym_membership
+    free_doctor_on_call
+    number_of_paid_leaves
+    flexible_work_timings
+    remote_work_friendly
+  }
+}
+
+
+
+
+

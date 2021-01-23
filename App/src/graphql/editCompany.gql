@@ -1,0 +1,52 @@
+
+mutation 
+editCompany
+(
+  $id : Int!,
+  $name: String!, 
+  $website : String!, 
+  $number_of_employees : Int!,
+  $funding_stage :String!,
+  $industry : String!,
+  
+  $health_insurance : String!,
+  $sum_insured : Int!,
+  $family_covered : String!,
+  $parents_covered : String!,
+  $maternity_covered : String!,
+  $gym_membership : String!,
+  $free_doctor_on_call : String!,
+  $number_of_paid_leaves :Int!,
+  $flexible_work_timings : String!,
+  $remote_work_friendly : String!
+)
+{
+  editCompany(
+  id:$id,
+   name: $name, 
+  website: $website, 
+  number_of_employees : $number_of_employees,
+  funding_stage : $funding_stage,
+  industry : $industry,
+  
+  health_insurance : $health_insurance,
+  sum_insured : $sum_insured,
+  family_covered : $family_covered,
+  parents_covered:$parents_covered,
+  maternity_covered : $maternity_covered,
+  gym_membership : $gym_membership,
+  free_doctor_on_call : $free_doctor_on_call,
+  number_of_paid_leaves : $number_of_paid_leaves,
+  flexible_work_timings : $flexible_work_timings ,
+  remote_work_friendly : $remote_work_friendly
+  )
+  {
+    id
+    name
+  }
+}
+
+
+
+
+
